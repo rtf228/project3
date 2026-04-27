@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Laila';
+    src: url('../Font/Laila-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #0099ab;
+    --text-white: #ffffff;
+}
+
+body {
+    font-family: 'Laila', sans-serif;
+}
+
+.top-section {
+    width: 100%;
+    min-height: 400px; 
+    background-image: url('../img/Прототип.png'); 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.top-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.fl { display: flex; align-items: center; }
+
+
+.logo-box {
+    gap: 10px; 
+}
+.logo-img { 
+    height: 35px; filter: brightness(0) invert(1); 
+}
+.logo-text { 
+    font-size: 28px; color: var(--accent-color); 
+}
+
+
+.nav-list {
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 25px;
+    border: 1px solid var(--accent-color); 
+    border-radius: 20px; 
+    transition: all 0.3s ease;
+}
+
+
+.nav-link:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+.nav-link.active {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+}
