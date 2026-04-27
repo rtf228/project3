@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="registration-card">
+    <h2>Реєстрація</h2>
+    
+    <form action="" method="post">
+        <fieldset>
+            <div class="form-group">
+                <label for="user-name">Ім'я:</label>
+                <input type="text" id="user-name" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="useremail" required placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="user-password">Пароль:</label>
+                <input type="password" id="user-password" name="password" required >
+            </div>
+
+            <div class="form-group">
+                <label for="level">Рівень:</label>
+                <input type="range" id="level" name="level" min="1" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="char-class">Клас:</label>
+                <select id="char-class" name="charclass">
+                    <option value="warrior">Воїн</option>
+                    <option value="mage">Маг</option>
+                    <option value="archer">Лучник</option>
+                </select>
+            </div>
+
+            <div class="skills-group">
+                <label>Навички:</label>
+                
+                <div class="checkbox-item">
+                    <span class="checkbox-label">Сила</span>
+                    <input type="checkbox" name="skill" value="strength">
+                </div>
+                
+                <div class="checkbox-item">
+                    <span class="checkbox-label">Швидкість</span>
+                    <input type="checkbox" name="skill" value="speed">
+                </div>
+                
+                <div class="checkbox-item">
+                    <span class="checkbox-label">Інтелект</span>
+                    <input type="checkbox" name="skill" value="intellect">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Зареєструватись</button>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

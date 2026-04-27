@@ -1,0 +1,28 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    transition: 0.5s linear all;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: perspective (600px) rotateY(0deg);
+}
+
+.back {
+    transform: perspective (600px) rotatey (180deg);
+}
+
+.front:hover {
+    transform: perspective (600px) rotateY(180deg);
+}
+
+.back:hover {
+
+    transform: perspective (600px) rotateY(0deg);
+}

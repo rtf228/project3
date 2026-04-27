@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+ 
+table,
+th,
+td {
+  border: 1px black solid;
+  text-align: center;
+  font-size: 30px;
+  border-collapse: collapse;
+  padding: 5px 15px;
+}
+
+th{
+    background-color: grey;
+
+}
+
+table{
+    background-image: url(img/depositphotos_32373095-stock-illustration-office-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
